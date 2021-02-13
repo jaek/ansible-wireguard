@@ -1,0 +1,3 @@
+vps_ip: 199.222.111.123
+vps_publc_key: <your wireguard public key>
+vps_port: 123456
