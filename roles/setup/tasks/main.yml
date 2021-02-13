@@ -1,0 +1,11 @@
+---
+- name: install wireguard with apt
+  apt:
+    name: wireguard
+  when: ansible_facts['os_family'] == "Debian"
+
+- name: install wireguard with dnf
+  dnf:
+    name: wireguard-tools
+  when: ansible_facts['os_family'] == "RedHat"
+
