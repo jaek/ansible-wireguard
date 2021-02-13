@@ -1,0 +1,9 @@
+---
+- name: print_all
+  ansible.builtin.debug:
+          var: hostvars[inventory_hostname]
+          verbosity: 4
+
+# - name: Add client to vps
+#   blockinfile: 
+#       path: /etc/wireguard/wg0.conf

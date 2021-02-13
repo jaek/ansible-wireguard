@@ -1,0 +1,6 @@
+---
+- hosts: wireguard
+  any_errors_fatal: true
+  roles:
+          - { role: wireguard }
+            #          - { role: endpoint }
